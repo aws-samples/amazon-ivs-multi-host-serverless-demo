@@ -1,4 +1,4 @@
-import { IVS, Ivschat, IVSRealTime } from "aws-sdk";
+import { Ivschat, IVSRealTime } from "aws-sdk";
 
 import { getGroup } from "./sdk/ddb";
 import { createTokens } from "./tokens";

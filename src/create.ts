@@ -1,4 +1,4 @@
-import { IVS, Ivschat, Ivsrealtime } from "aws-sdk";
+import { IVS, Ivschat, IVSRealTime } from "aws-sdk";
 
 import { putGroup } from "./sdk/ddb";
 import { createStage } from "./sdk/realtime";
@@ -56,8 +56,8 @@ async function create(
   try {
     const stage = await createStage();
     stageResponse = {
-      id: stage.arn as Ivsrealtime.Types.StageArn,
-      token: "" as Ivsrealtime.Types.ParticipantToken,
+      id: stage.arn as IVSRealTime.Types.StageArn,
+      token: "" as IVSRealTime.Types.ParticipantToken,
     };
   } catch (err) {
     throw new Error(`Failed to create stage: ${(err as Error).toString()}`);

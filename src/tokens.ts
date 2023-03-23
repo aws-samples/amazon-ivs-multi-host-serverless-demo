@@ -1,4 +1,4 @@
-import { IVS, Ivschat, IVSRealTime } from "aws-sdk";
+import { Ivschat, IVSRealTime } from "aws-sdk";
 
 import { createStageToken } from "./sdk/realtime";
 import { createChatToken } from "./sdk/room";
